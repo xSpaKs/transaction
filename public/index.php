@@ -7,6 +7,8 @@ $url = explode("exo2", $url)[1];
 $url = explode("?", $url)[0];
 $url = str_replace("/public", "", $url);
 
+$method = $_SERVER['REQUEST_METHOD'];
+
 switch($url)
 {
     case '/' :
